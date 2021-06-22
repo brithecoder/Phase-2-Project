@@ -1,0 +1,31 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Wash and Style",
+      "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles-2/wash-and-go-hair/loreal-paris-bmag-article-19-wash-and-go-hairstyles-for-low-maintenance-hair-th.jpg?thn=0",
+      "price": 60,
+      "duration": "1 hour"
+    },
+    {
+      "id": 2,
+      "name": "Extension Installation",
+      "img_url": "./sushi/ebi.png",
+      "price": 120,
+      "duration": "1 hour 45 minutes"
+    },
+    {
+      "id": 3,
+      "name": "Box Braids",
+      "img_url": "./sushi/sake.png",
+      "price": 230,
+      "duration": "3 hours and 45mins"
+    },
+    {
+      "id": 4,
+      "name": "Color Treatment",
+      "img_url": "./sushi/tobiko.png",
+      "price": 100,
+      "duration": "2 hours"
+    }]
+}
