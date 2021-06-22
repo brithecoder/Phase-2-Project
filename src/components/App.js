@@ -1,7 +1,7 @@
-import react from "react";
-import Login from "./Login";
-import Services from "./Services"
-import './App.css';
+import React from "react";
+import Login from "../components/Login";
+import Services from "../components/Services"
+import '../css/App.css';
 
 function App() {
   return (
