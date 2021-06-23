@@ -7,7 +7,7 @@ function ServiceCard({service}){
     console.log(service)
 
     return(
-        <div className="service-card centered card">
+        <div className="service-card">
             <div class="ui special cards">
                 <div class="card">
                     <div class="blurring dimmable image">
@@ -54,7 +54,7 @@ function ServiceCard({service}){
                     </a>
                 </div>
                 </div>
-            </div>            
+            </div>         
         </div> 
     );
 }
