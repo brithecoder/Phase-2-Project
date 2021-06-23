@@ -1,6 +1,19 @@
 .App {
+  background-color: #ffefff;
+}
+.Appheader {
   background-color: #cdb7f6;
   color: #ffff;
   font-size: 30px;
   text-align: center;
 }
+.service-img {
+  width: 200px;
+}
+/* .card {
+  display: grid;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 5px double black;
+} */
