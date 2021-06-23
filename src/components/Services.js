@@ -9,7 +9,7 @@ function Services({serviceData}){
     // />)
 
     return(
-        <div className="ui centered card service-collection" >
+        <div className="ui centered card service-collection" style={{marginBottom: "70px", backgroundColor: "#ffefff"}} >
             {serviceData.map((service) => <ServiceCard  key={service.id} service={service}
             />)}
             {/* {fromSignIn} */}

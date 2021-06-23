@@ -3,6 +3,10 @@ import React from "react";
 
 
 function ServiceCard({service}){
+
+    const handleBook =() => {
+        console.log("Book Me")
+    }
     
     console.log(service)
 
@@ -26,6 +30,13 @@ function ServiceCard({service}){
                     <span class="date">{service.description}</span>
                 </div>
             </div>
+            <div class="extra content">
+                <h5>
+                    <i class="users icon"></i>Price: ${service.price} 
+                    <button onClick={handleBook}    class="ui right floated button">Book Now</button>
+                    <br/> Duration: {service.duration} 
+                </h5>
+            </div>
             {/* <div class="extra content">
                 <a> <i class="users icon"></i>  2 Members </a>
             </div>
@@ -46,14 +57,14 @@ function ServiceCard({service}){
                     <div class="meta">
                         <span class="date">Created in Aug 2014</span>
                     </div>
-                </div> */}
+                </div>
                 <div class="extra content">
                     <a href="./">
                     <i class="users icon"></i>
                      price: ${service.price} 
                       <br/> Duration: {service.duration}
                     </a>
-                </div>
+                </div> */}
                 </div>
             </div>         
         </div> 

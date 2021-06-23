@@ -3,7 +3,7 @@ import '../css/App.css';
 import Header from "./Header";
 import SignIn from "../components/SignIn";
 import Services from "../components/Services"
-// import ServiceCard from "../components/ServiceCard";
+import Footer from "../components/Footer";
 
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
       <Header />
       {/* <SignIn fromSignIn={fromSignIn}/> */}
       <Services serviceData={serviceData} />
+      <Footer />
       <hr/> <hr/>
     </div>
   );
