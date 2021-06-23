@@ -7,7 +7,7 @@ function ServiceCard({service}){
     console.log(service)
 
     return(
-        <div className="service-card centered card">
+        <div class="service-card ">
             <div class="ui special cards">
                 <div class="card">
                     <div class="blurring dimmable image">
@@ -21,9 +21,9 @@ function ServiceCard({service}){
                     <img src={service.img_url}/>
                 </div>
                 <div class="content">
-                    <a class="header">Team Fu</a>
+                    <a class="header">{service.name}</a>
                     <div class="meta">
-                    <span class="date">Created in Sep 2014</span>
+                    <span class="date">{service.description}</span>
                 </div>
             </div>
             {/* <div class="extra content">
@@ -50,7 +50,8 @@ function ServiceCard({service}){
                 <div class="extra content">
                     <a>
                     <i class="users icon"></i>
-                    2 Members
+                     price: ${service.price} 
+                      <br/> Duration: {service.duration}
                     </a>
                 </div>
                 </div>
