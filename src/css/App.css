@@ -19,7 +19,12 @@
 } */
 
 
-.special:hover{
-  background-color: #cdb7f6;
+
+img:hover {
+  background-color: black;
 }
+
+/* ('.special.cards .image').dimmer({
+  on: 'hover'
+}); */
 

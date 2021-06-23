@@ -1,15 +1,13 @@
 import React from "react";
-import { Button, Card } from 'semantic-ui-react'
+
 
 
 function ServiceCard({service}){
     
     console.log(service)
 
-    return
-        <div class="service-card ">
+    return (
         <div class="service-card">
-        main
             <div class="ui special cards">
                 <div class="card">
                     <div class="blurring dimmable image">
@@ -20,10 +18,10 @@ function ServiceCard({service}){
                             </div>
                         </div>
                     </div>
-                    <img src={service.img_url}/>
+                    <img src={service.img_url} alt={service.name}/>
                 </div>
                 <div class="content">
-                    <a class="header">{service.name}</a>
+                    <a href="./" class="header">{service.name} </a>
                     <div class="meta">
                     <span class="date">{service.description}</span>
                 </div>
@@ -50,7 +48,7 @@ function ServiceCard({service}){
                     </div>
                 </div> */}
                 <div class="extra content">
-                    <a>
+                    <a href="./">
                     <i class="users icon"></i>
                      price: ${service.price} 
                       <br/> Duration: {service.duration}
@@ -62,15 +60,3 @@ function ServiceCard({service}){
     );
 }
 export default ServiceCard;
-
-
-
-      {/* <h2>{service.name}</h2>
-        <img 
-        src={service.img_url}
-        className="service-img"
-        />
-        <p> {service.description}</p>
-        <p> time:{service.duration}</p>
-        <p> price:{service.price}</p>
-        <button class="ui button">Click Here</button> */}

@@ -31,5 +31,12 @@
       "price": 100,
       "duration": "2 hours",
       "description":"If you are coloring virgin hair or looking for a touch up"
-    }]
+    }],
+    "users": [
+      {
+        "id": 1,
+        "name": "Wash and Style",
+        "telephone": "000-000-000",
+        "email": ""
+      }]
 }
