@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import Login from "../components/Login";
-import Services from "../components/Services"
+import Services from "../components/Services";
+import Header from "./Header";
 import '../css/App.css';
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <header className="Appheader">
-        <h1>The Hair Code</h1>
+        <h1>The Hair Code </h1>
       </header>
       <Login  />
       <Services serviceData={serviceData} />
