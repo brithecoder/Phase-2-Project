@@ -3,12 +3,16 @@ import '../css/App.css';
 import Header from "./Header";
 import SignIn from "../components/SignIn";
 import Services from "../components/Services"
-// import ServiceCard from "../components/ServiceCard";
+import UserForm from "./UserForm";
+import Footer from "../components/Footer";
+import ServiceModal from "../components/ServiceModal"
+import SimpleModal from "./SimpleModal";
 
 
 function App() {
   const[serviceData, setServiceData]=useState([])
   const [signIn, setSignIn] = useState(false)
+  const [selectBooking, setSelectBooking] = useState(false)
   
   useEffect(() =>{
     fetch('http://localhost:3000/services')
@@ -24,18 +28,33 @@ function App() {
     if(signIn === false) {
       setSignIn(signIn => !signIn)
       console.log("Welcome to the Hair Salon")
+      return (
+        <ServiceModal />
+      )
     }
-    return "Hello"
+  }
 
+  const testing = () => {
+    if(selectBooking === false){
+      setSelectBooking(selectBooking => !selectBooking)
+      return (
+        <ServiceModal />
+      )
+    } else {
+      return (
+        <SimpleModal />
+      )
+    }
   }
 
 
   return (
-    <div className="App">
+    <div className="App" style={{marginTop: "70px"}}>
       <Header />
       {/* <SignIn fromSignIn={fromSignIn}/> */}
-      <Services serviceData={serviceData} />
-      <hr/> <hr/>
+      <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
+    
+      <Footer />
     </div>
   );
 }

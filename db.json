@@ -5,7 +5,7 @@
       "name": "Wash and Style",
       "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles-2/wash-and-go-hair/loreal-paris-bmag-article-19-wash-and-go-hairstyles-for-low-maintenance-hair-th.jpg?thn=0",
       "price": 60,
-      "duration": "1 hour",
+      "duration": "60 min",
       "description":"Wash and dry with protien treatment. scalp massage included "
     },
     {
@@ -13,7 +13,7 @@
       "name": "Extension Installation",
       "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Y5ZVM3_xdurLTuKy4LZN6s9lYXr_0ovvHA&usqp=CAU",
       "price": 120,
-      "duration": "1 hour 45 minutes",
+      "duration": "105 mins",
       "description":"Hair frontal installation or quick weave (hair not included)"
     },
     {
@@ -21,7 +21,7 @@
       "name": " Knotless Box Braids",
       "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYrB2VHfalkUZAMZEN27dRHDzgf7lHXj-2w&usqp=CAU",
       "price": 230,
-      "duration": "3 hours and 45mins",
+      "duration": "225 mins",
       "description":"Indiviual braids"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Color Treatment",
       "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5B6ihUvwYK-KuN2ESpK46PHtbTQsPBZ6z2g&usqp=CAU",
       "price": 100,
-      "duration": "2 hours",
+      "duration": "120 mins",
       "description":"If you are coloring virgin hair or looking for a touch up"
     }],
     "users": [

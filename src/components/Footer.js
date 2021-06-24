@@ -2,9 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import "../css/App.css"
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +15,7 @@ export default function Footer() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
+    <BottomNavigation class="footer"
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
@@ -25,9 +23,23 @@ export default function Footer() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      <div>
+        @Copyright 2021
+  
+        <button class="ui circular facebook icon button ui right floated button">
+          <i class="facebook icon"></i>
+        </button>
+        <button class="ui circular twitter icon button right floated ">
+          <i class="twitter icon"></i>
+        </button>
+        <button class="ui circular linkedin icon button right floated ">
+          <i class="linkedin icon"></i>
+        </button>
+        <button class="ui circular google plus icon button right floated ">
+          <i class="google plus icon"></i>
+        </button>
+      </div>
+
     </BottomNavigation>
   );
 }
