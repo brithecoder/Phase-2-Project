@@ -2,13 +2,14 @@ import React from "react";
 
 
 
-function ServiceCard({service}){
+function ServiceCard({service, fromSignIn}){
 
     const handleBook =() => {
         console.log("Book Me")
+        fromSignIn()
     }
     
-    console.log(service)
+   // console.log(service)
 
     return (
         <div class="service-card">
@@ -33,7 +34,7 @@ function ServiceCard({service}){
             <div class="extra content">
                 <h5>
                     <i class="users icon"></i>Price: ${service.price} 
-                    <button onClick={handleBook}    class="ui right floated button">Book Now</button>
+                    <button onClick={handleBook} class="ui right floated button">Book Now</button>
                     <br/> Duration: {service.duration} 
                 </h5>
             </div>

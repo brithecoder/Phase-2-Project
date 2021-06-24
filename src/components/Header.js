@@ -6,9 +6,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import SimpleModal from '../components/SimpleModal'
+
 
 const Header = () => {
-    
+
     const useStyles = makeStyles((theme: Theme) =>
     createStyles({
       root: {
@@ -32,7 +34,8 @@ const Header = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>Hair Style Services</Typography>
-                    <Button color="inherit">Login</Button>
+                    {/* <Button color="inherit">Login</Button> */}
+                    <SimpleModal />
                 </Toolbar>
             </AppBar>
         </div>
