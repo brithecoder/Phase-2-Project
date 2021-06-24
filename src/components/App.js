@@ -6,11 +6,13 @@ import Services from "../components/Services"
 import UserForm from "./UserForm";
 import Footer from "../components/Footer";
 import ServiceModal from "../components/ServiceModal"
+import SimpleModal from "./SimpleModal";
 
 
 function App() {
   const[serviceData, setServiceData]=useState([])
   const [signIn, setSignIn] = useState(false)
+  const [selectBooking, setSelectBooking] = useState(false)
   
   useEffect(() =>{
     fetch('http://localhost:3000/services')
@@ -30,8 +32,19 @@ function App() {
         <ServiceModal />
       )
     }
-    
+  }
 
+  const testing = () => {
+    if(selectBooking === false){
+      setSelectBooking(selectBooking => !selectBooking)
+      return (
+        <ServiceModal />
+      )
+    } else {
+      return (
+        <SimpleModal />
+      )
+    }
   }
 
 
@@ -40,6 +53,7 @@ function App() {
       <Header />
       {/* <SignIn fromSignIn={fromSignIn}/> */}
       <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
+    
       <Footer />
     </div>
   );
