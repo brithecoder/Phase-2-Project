@@ -1,10 +1,15 @@
-import React from "react";
-import { Button, Card } from 'semantic-ui-react'
+import React, { useState } from "react";
+import { Button, Card } from 'semantic-ui-react';
+import Calendar from "../components/Calendar";
+
 
 
 function ServiceCard({service}){
-    
     console.log(service)
+    
+    // function handleClick(){
+    //     calendarFunction(service);
+    // }
 
     return(
     
@@ -55,9 +60,11 @@ function ServiceCard({service}){
                       <br/> Duration: {service.duration}
                     </a>
                 </div>
-                </div>
-            </div>         
-        </div> 
+                 
+                   Book Now<Calendar />
+            </div>
+        </div>         
+    </div> 
     );
 }
 export default ServiceCard;

@@ -6,7 +6,7 @@
       "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles-2/wash-and-go-hair/loreal-paris-bmag-article-19-wash-and-go-hairstyles-for-low-maintenance-hair-th.jpg?thn=0",
       "price": 60,
       "duration": "1 hour",
-      "description":"Wash and dry with protien treatment. scalp massage included "
+      "description":"Wash and dry with protein treatment. scalp massage included "
     },
     {
       "id": 2,
@@ -31,5 +31,21 @@
       "price": 100,
       "duration": "2 hours",
       "description":"If you are coloring virgin hair or looking for a touch up"
-    }]
+    }
+  ],
+
+  "comments":[
+   {
+    "id": 1,
+    "comment":"They do such a nice job !"
+   },
+   {
+     "id":2,
+     "comment":"I love the Wash and Style"
+   },
+   {
+   "id":3,
+   "comment":"I went Bald last year.I wonder if I should grow out my hair again?"
+   }
+  ]
 }
