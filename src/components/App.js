@@ -41,15 +41,8 @@ console.log(ap)
   return (
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
-<<<<<<< HEAD
       <Services serviceData={serviceData} ap={ap}/>
       <Calendar />
-=======
-      {/* <SignIn fromSignIn={fromSignIn}/> */}
-      <Services serviceData={serviceData} fromSignIn={fromSignIn}/> 
-      <br/>
-      {/* <Comments /> */}
->>>>>>> 0e1a93c402de0d4c550a05e374302b76b1b96faa
       <Footer />
     </div>
   );
