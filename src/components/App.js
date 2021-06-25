@@ -3,7 +3,10 @@ import '../css/App.css';
 import Header from "./Header";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import Calendar from "../components/Calendar";
+import ServiceModal from "../components/ServiceModal"
+import Comments from "../components/Comments"
+import SimpleModal from "./SimpleModal";
+
 
 function App() {
   const[serviceData, setServiceData] = useState([])
@@ -18,6 +21,8 @@ function App() {
     }
     )
   },[])
+  
+
 
   function fromSignIn () {
     console.log("You tryna get yo hair did? Errythang did?")
@@ -29,7 +34,10 @@ function App() {
   return (
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
-      <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
+      {/* <SignIn fromSignIn={fromSignIn}/> */}
+      <Services serviceData={serviceData} fromSignIn={fromSignIn}/> 
+      <br/>
+      {/* <Comments /> */}
       <Footer />
     </div>
   );

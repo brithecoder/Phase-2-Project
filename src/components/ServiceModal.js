@@ -1,8 +1,13 @@
 import React from 'react'
+import Calendar from '../components/Calendar'
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
 
-function ServiceModal() {
+function ServiceModal({service}) {
   const [open, setOpen] = React.useState(false)
+  
+  function  handleFooter({ selectDate}) {
+    console.log( selectDate)
+  }
 
   return (
     <Modal
@@ -12,19 +17,21 @@ function ServiceModal() {
       trigger={<button class="ui right floated button ui mini button" style={{fontSize: "16px", padding: "5px"}}>Book Now</button>}
 
     >
-      <Modal.Header>Select a Photo</Modal.Header>
+      <Modal.Header>Book {service.name} </Modal.Header>
       <Modal.Content image>
-        <Image size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' wrapped />
+        <Image size='medium' src={service.img_url} wrapped />
         <Modal.Description>
-          <Header>Default Profile Image</Header>
+          <Header>Is This You ?</Header>
           <p>
-            We've found the following gravatar image associated with your e-mail
-            address.
+            Have you found the style you've been looking for ? If so book here 👇
           </p>
-          <p>Is it okay to use this photo?</p>
+          <div>
+            <Calendar />
+          </div>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
+        <p class="ui left floated">{handleFooter}</p>
         <Button color='black'  onClick={() => setOpen(false)}>
           Nope
         </Button>

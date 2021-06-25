@@ -1,22 +1,17 @@
 import React from "react";
 import ServiceModal from "../components/ServiceModal"
-
-
 function ServiceCard({service, fromSignIn}){
-
     const handleBook =() => {
         console.log("Book Me")
         fromSignIn()
     }
-    
    function test(){
        return (
         <div class="ui right floated button"> 
-        <ServiceModal />
+        <ServiceModal  service={service} />
         </div>
        )
    }
-
     return (
         <div class="service-card">
             <div class="ui special cards">
