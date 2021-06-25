@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from "./components/App";
-
-
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+
   <React.StrictMode>
       <App />
   </React.StrictMode>,

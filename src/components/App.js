@@ -1,11 +1,18 @@
 import React, {useState,useEffect} from "react";
-import Login from "../components/Login";
-import Services from "../components/Services";
-import Header from "./Header";
 import '../css/App.css';
+import Header from "./Header";
+import SignIn from "../components/SignIn";
+import Services from "../components/Services"
+import UserForm from "./UserForm";
+import Footer from "../components/Footer";
+import ServiceModal from "../components/ServiceModal"
+import SimpleModal from "./SimpleModal";
+
 
 function App() {
   const[serviceData, setServiceData]=useState([])
+  const [signIn, setSignIn] = useState(false)
+  const [selectBooking, setSelectBooking] = useState(false)
   
   useEffect(() =>{
     fetch('http://localhost:3000/services')
@@ -16,14 +23,38 @@ function App() {
     )
   },[])
 
+  function fromSignIn () {
+    console.log("You tryna get yo hair did? Errythang did?")
+    if(signIn === false) {
+      setSignIn(signIn => !signIn)
+      console.log("Welcome to the Hair Salon")
+      return (
+        <ServiceModal />
+      )
+    }
+  }
+
+  const testing = () => {
+    if(selectBooking === false){
+      setSelectBooking(selectBooking => !selectBooking)
+      return (
+        <ServiceModal />
+      )
+    } else {
+      return (
+        <SimpleModal />
+      )
+    }
+  }
+
+
   return (
-    <div className="App">
+    <div className="App" style={{marginTop: "70px"}}>
       <Header />
-      <header className="Appheader">
-        <h1>The Hair Code </h1>
-      </header>
-      <Login  />
-      <Services serviceData={serviceData} />
+      {/* <SignIn fromSignIn={fromSignIn}/> */}
+      <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
+    
+      <Footer />
     </div>
   );
 }

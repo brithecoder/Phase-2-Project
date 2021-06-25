@@ -19,7 +19,18 @@
 } */
 
 
-.special:hover{
-  background-color: #cdb7f6;
+.footer{
+  margin-top: 70px;
+  padding: 1rem;
+  background-color: rgb(235, 195, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
+.service-card {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
