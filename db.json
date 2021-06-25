@@ -5,9 +5,8 @@
       "name": "Wash and Style",
       "img_url":"https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles-2/wash-and-go-hair/loreal-paris-bmag-article-19-wash-and-go-hairstyles-for-low-maintenance-hair-th.jpg?thn=0",
       "price": 60,
-
-      "duration": "60 min",
-      "description":"Wash and dry with protien treatment. scalp massage included "
+      "duration": "1 hour",
+      "description":"Wash and dry with protein treatment. scalp massage included "
     },
     {
       "id": 2,
@@ -49,12 +48,39 @@
    "comment":"I went Bald last year.I wonder if I should grow out my hair again?"
    }
   ],
-  "users": [
+
+  "appointment" : [
     {
       "id": 1,
-      "name": "Wash and Style",
-      "telephone": "000-000-000",
-      "email": ""
-    }
+      "time": "9:00 am"
+     },
+     {
+      "id": 2,
+      "time": "10:00 am"
+     },
+     {
+      "id": 3,
+      "time": "11:00 am"
+     },
+     {
+      "id": 4,
+      "time": "12:00 pm"
+     },
+     {
+      "id": 5,
+      "time": "02:00 pm"
+     },
+     {
+      "id": 6,
+      "time": "03:00 pm"
+     },
+     {
+      "id": 7,
+      "time": "04:00 pm"
+     },
+     {
+      "id": 8,
+      "time": "05:00 pm"
+     }
   ]
 }

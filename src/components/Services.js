@@ -2,7 +2,7 @@ import React from "react";
 import ServiceCard from "../components/ServiceCard";
 
 
-function Services({serviceData, fromSignIn}){
+function Services({serviceData, fromSignIn, ap}){
     console.log(serviceData)
 
     // const fromSignIn = serviceData.map((service) => <ServiceCard  key={service.id} service={service}
@@ -10,7 +10,7 @@ function Services({serviceData, fromSignIn}){
 
     return(
         <div className="ui centered card service-collection" style={{marginBottom: "30px", backgroundColor: "#ffefff"}} >
-            {serviceData.map((service) => <ServiceCard  key={service.id} service={service} fromSignIn={fromSignIn}
+            {serviceData.map((service) => <ServiceCard  key={service.id} service={service} fromSignIn={fromSignIn} ap={ap}
             />)}
             <div style={{margin: "56px"}}></div>
         </div> 

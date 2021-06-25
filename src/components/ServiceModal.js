@@ -1,13 +1,15 @@
 import React from 'react'
 import Calendar from '../components/Calendar'
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import "../css/App.css"
 
-function ServiceModal({service}) {
+function ServiceModal({ap, service, handleFooter}) {
   const [open, setOpen] = React.useState(false)
-  
-  function  handleFooter({ selectDate}) {
-    console.log( selectDate)
-  }
+  console.log(ap)
+
+  const bookApp = ap.map(time => {
+      return <div><button >{time.time}</button></div>
+  })
 
   return (
     <Modal
@@ -25,8 +27,9 @@ function ServiceModal({service}) {
           <p>
             Have you found the style you've been looking for ? If so book here 👇
           </p>
-          <div>
-            <Calendar />
+          <p>Is it okay to use this photo?</p>
+          <div className="container">
+          {bookApp}
           </div>
         </Modal.Description>
       </Modal.Content>
