@@ -9,7 +9,8 @@ function ServiceModal() {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Show Modal</Button>}
+      trigger={<button class="ui right floated button ui mini button" style={{fontSize: "16px", padding: "5px"}}>Book Now</button>}
+
     >
       <Modal.Header>Select a Photo</Modal.Header>
       <Modal.Content image>
@@ -24,7 +25,7 @@ function ServiceModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button color='black' onClick={() => setOpen(false)}>
+        <Button color='black'  onClick={() => setOpen(false)}>
           Nope
         </Button>
         <Button

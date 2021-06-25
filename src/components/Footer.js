@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+
 import "../css/App.css"
 
 const useStyles = makeStyles({
@@ -20,9 +20,7 @@ export default function Footer() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
-      className={classes.root}
-    >
+      className={classes.root}>
       <div>
         @Copyright 2021
   
