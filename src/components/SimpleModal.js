@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import UserForm from  '../components/UserForm'
@@ -19,8 +19,7 @@ function getModalStyle() {
   };
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
+const useStyles = makeStyles((theme) => ({
     paper: {
       position: 'absolute',
       width: 400,
@@ -29,8 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
-  }),
-);
+  }));
 
 export default function SimpleModal() {
   const classes = useStyles();
@@ -49,10 +47,10 @@ export default function SimpleModal() {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <h2 id="simple-modal-title">Time to Login</h2>
-      <p id="simple-modal-description">
+      <div id="simple-modal-description">
         <UserForm />
-      </p>
-      <SimpleModal />
+      </div>
+      <Button onClick={handleOpen} color="inherit">Login</Button>
     </div>
   );
 

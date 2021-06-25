@@ -1,13 +1,17 @@
-import React, {useState} from "react";
-import Calendar from "./Calendar";
+import React from "react";
+import ServiceModal from "../components/ServiceModal"
 function ServiceCard({service, fromSignIn}){
-    const [showCalendar,setShowCalendar]=useState(false);
-
     const handleBook =() => {
         console.log("Book Me")
-        setShowCalendar((showCalendar)=>!showCalendar);
+        fromSignIn()
     }
-   // console.log(service)
+   function test(){
+       return (
+        <div class="ui right floated button"> 
+        <ServiceModal />
+        </div>
+       )
+   }
     return (
         <div class="service-card">
             <div class="ui special cards">
@@ -31,11 +35,10 @@ function ServiceCard({service, fromSignIn}){
                     <div class="extra content">
                         <h5>
                             <i class="users icon"></i>Price: ${service.price} 
-                            <button onClick={handleBook} class="ui right floated button">Book Now</button>
+                            {test()}
+                            {/* <button onClick={handleBook} class="ui right floated button">Book Now</button> */}
                             <br/> Duration: {service.duration} 
-                            {showCalendar? <Calendar /> :null}
                         </h5>
-                        
                     </div>
                 </div>
             </div>         
