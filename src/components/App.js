@@ -20,8 +20,6 @@ function App() {
     }
     )
   },[])
-  
-
 
   useEffect(() => {
     fetch('http://localhost:3000/appointment')
@@ -38,6 +36,10 @@ console.log(ap)
   return (
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
+      {/* <SignIn fromSignIn={fromSignIn}/> */}
+      <Services serviceData={serviceData}/> 
+      <br/>
+      <Comments />
       <Services serviceData={serviceData} ap={ap}/>
       <Footer />
     </div>
