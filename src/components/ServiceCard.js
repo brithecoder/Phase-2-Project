@@ -8,7 +8,6 @@ function ServiceCard({service, fromSignIn, ap}){
         console.log("Book Me")
         fromSignIn()
     }
-    
    function test(){
        return (
         <div class="ui right floated button"> 
@@ -16,7 +15,6 @@ function ServiceCard({service, fromSignIn, ap}){
         </div>
        )
    }
-
     return (
         <div class="service-card">
             <div class="ui special cards">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DateTimePicker from 'react-datetime-picker';
-
+import DatePicker from 'react-date-picker';
 
 function Calendar({service}){
     const [selectDate, setSelectDate] = useState(new Date());
@@ -12,14 +12,17 @@ function Calendar({service}){
     }
     function handleChange(e){
         console.log(e)
+        setSelectDate(e)
+         
     }
 
     return(
         <div>
-            <DateTimePicker onChange={(e) => handleChange(e)}
+            <DatePicker onChange={(e) => handleChange(e)}
                 setSelectDate={setSelectDate}
-                selectDate={selectDate} 
-            />
+                selectDate={selectDate}
+                value={selectDate} />
+            
         </div>
     );
 }

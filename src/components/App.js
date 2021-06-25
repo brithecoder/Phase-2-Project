@@ -3,7 +3,10 @@ import '../css/App.css';
 import Header from "./Header";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import Calendar from "../components/Calendar";
+import ServiceModal from "../components/ServiceModal"
+import Comments from "../components/Comments"
+import SimpleModal from "./SimpleModal";
+
 
 function App() {
   const [serviceData, setServiceData] = useState([])
@@ -20,6 +23,8 @@ function App() {
     }
     )
   },[])
+  
+
 
   useEffect(() => {
     fetch('http://localhost:3000/appointment')
@@ -36,8 +41,15 @@ console.log(ap)
   return (
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
+<<<<<<< HEAD
       <Services serviceData={serviceData} ap={ap}/>
       <Calendar />
+=======
+      {/* <SignIn fromSignIn={fromSignIn}/> */}
+      <Services serviceData={serviceData} fromSignIn={fromSignIn}/> 
+      <br/>
+      {/* <Comments /> */}
+>>>>>>> 0e1a93c402de0d4c550a05e374302b76b1b96faa
       <Footer />
     </div>
   );
