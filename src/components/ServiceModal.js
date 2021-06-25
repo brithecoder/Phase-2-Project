@@ -1,8 +1,14 @@
 import React from 'react'
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import "../css/App.css"
 
-function ServiceModal() {
+function ServiceModal({ap}) {
   const [open, setOpen] = React.useState(false)
+  console.log(ap)
+
+  const bookApp = ap.map(time => {
+      return <div><button >{time.time}</button></div>
+  })
 
   return (
     <Modal
@@ -22,6 +28,9 @@ function ServiceModal() {
             address.
           </p>
           <p>Is it okay to use this photo?</p>
+          <div className="container">
+          {bookApp}
+          </div>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>

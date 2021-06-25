@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect} from "react";
 import '../css/App.css';
 import Header from "./Header";
 import Services from "../components/Services";
@@ -6,11 +6,13 @@ import Footer from "../components/Footer";
 import Calendar from "../components/Calendar";
 
 function App() {
-  const[serviceData, setServiceData] = useState([])
+  const [serviceData, setServiceData] = useState([])
+  const [ap, setAp] = useState([])
+
   //const [signIn, setSignIn] = useState(false)
  // const [selectBooking, setSelectBooking] = useState(false)
   
-  useEffect(() =>{
+  useEffect(() => {
     fetch('http://localhost:3000/services')
     .then((res) => res.json())
     .then((data)=>{
@@ -19,17 +21,23 @@ function App() {
     )
   },[])
 
-  function fromSignIn () {
-    console.log("You tryna get yo hair did? Errythang did?")
+  useEffect(() => {
+    fetch('http://localhost:3000/appointment')
+    .then((res) => res.json())
+    .then((newApp)=>{
+      setAp(newApp);
+    }
+    )
+  },[])
 
-    // setSelectBooking(selectBooking => !selectBooking)
-  }
-
-
+  
+  
+console.log(ap)
   return (
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
-      <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
+      <Services serviceData={serviceData} ap={ap}/>
+      <Calendar />
       <Footer />
     </div>
   );

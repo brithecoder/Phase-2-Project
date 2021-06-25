@@ -2,7 +2,7 @@ import React from "react";
 import ServiceModal from "../components/ServiceModal"
 
 
-function ServiceCard({service, fromSignIn}){
+function ServiceCard({service, fromSignIn, ap}){
 
     const handleBook =() => {
         console.log("Book Me")
@@ -12,7 +12,7 @@ function ServiceCard({service, fromSignIn}){
    function test(){
        return (
         <div class="ui right floated button"> 
-        <ServiceModal />
+        <ServiceModal ap={ap}/>
         </div>
        )
    }
