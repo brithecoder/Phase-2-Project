@@ -18,7 +18,7 @@ function ServiceCard({service, fromSignIn, ap}){
     return (
 
         <div class="service-card">
-            <div class="ui special cards">
+            <div class="ui special cards ui centered cards">
                 <div class="card">
                     <div class="blurring dimmable image">
                         <div class="ui dimmer">
@@ -45,7 +45,8 @@ function ServiceCard({service, fromSignIn, ap}){
                         </h5>
                     </div>
                 </div>
-            </div>         
+            </div> 
+                 
         </div> 
     );
 }

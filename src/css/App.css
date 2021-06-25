@@ -1,12 +1,6 @@
 body {
   background-color: #ffefff;
 }
-.Appheader {
-  /* background-color: #cdb7f6; */
-  color: #ffff;
-  font-size: 20px;
-  text-align: center;
-}
 
 .service-img {
   width: 200px;
@@ -14,17 +8,13 @@ body {
 
 .service-collection{
   background-color: #ffefff;
-  /* margin: 20px;
-  padding: 20px; */
 }
 
 
 .footer{
-  margin-top: 70px;
-  padding: 1rem;
+  margin-top:100px;
+  padding: 3rem;
   background-color: rgb(235, 195, 64);
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
 }
