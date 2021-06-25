@@ -21,8 +21,6 @@ function App() {
     }
     )
   },[])
-  
-
 
   function fromSignIn () {
     console.log("You tryna get yo hair did? Errythang did?")
@@ -37,7 +35,7 @@ function App() {
       {/* <SignIn fromSignIn={fromSignIn}/> */}
       <Services serviceData={serviceData} fromSignIn={fromSignIn}/> 
       <br/>
-      {/* <Comments /> */}
+      <Comments />
       <Footer />
     </div>
   );
