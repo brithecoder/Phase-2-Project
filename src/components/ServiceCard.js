@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+import React, { useState } from "react";
+import { Button, Card } from 'semantic-ui-react';
+import Calendar from "../components/Calendar";
+
+
+
+function ServiceCard({service}){
+    console.log(service)
+    
+    // function handleClick(){
+    //     calendarFunction(service);
+    // }
+
+    return(
+    
+=======
 import React from "react";
 
 
@@ -12,6 +29,7 @@ function ServiceCard({service, fromSignIn}){
    // console.log(service)
 
     return (
+>>>>>>> main
         <div class="service-card">
             <div class="ui special cards">
                 <div class="card">
@@ -65,6 +83,19 @@ function ServiceCard({service, fromSignIn}){
                      price: ${service.price} 
                       <br/> Duration: {service.duration}
                     </a>
+<<<<<<< HEAD
+                </div>
+                 
+                   Book Now<Calendar />
+            </div>
+        </div>         
+    </div> 
+    );
+}
+export default ServiceCard;
+
+
+=======
                 </div> */}
                 </div>
             </div>         
@@ -72,3 +103,4 @@ function ServiceCard({service, fromSignIn}){
     );
 }
 export default ServiceCard;
+>>>>>>> main
