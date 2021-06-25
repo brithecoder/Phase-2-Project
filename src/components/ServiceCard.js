@@ -16,6 +16,7 @@ function ServiceCard({service, fromSignIn, ap}){
        )
    }
     return (
+
         <div class="service-card">
             <div class="ui special cards">
                 <div class="card">

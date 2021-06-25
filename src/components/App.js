@@ -22,7 +22,6 @@ function App() {
   },[])
   
 
-
   useEffect(() => {
     fetch('http://localhost:3000/appointment')
     .then((res) => res.json())
@@ -32,11 +31,10 @@ function App() {
     )
   },[])
 
-  
-  
+
 console.log(ap)
   return (
-    <div className="App" style={{marginTop: "70px"}}>
+    <div className="App" style={{marginTop: "100px", backgroundColor: "#ffefff"}}>
       <Header />
       <Services serviceData={serviceData} ap={ap}/>
       <Footer />

@@ -1,4 +1,4 @@
-.App {
+body {
   background-color: #ffefff;
 }
 .Appheader {
@@ -7,16 +7,16 @@
   font-size: 20px;
   text-align: center;
 }
+
 .service-img {
   width: 200px;
 }
-/* .card {
-  display: grid;
-  display: flex;
-  align-items: center;
-  padding: 3px;
-  border: 5px double black;
-} */
+
+.service-collection{
+  background-color: #ffefff;
+  /* margin: 20px;
+  padding: 20px; */
+}
 
 
 .footer{
@@ -27,19 +27,4 @@
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-.service-card {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-}
-
-
-.container {
-  display: flex;
-  flex-direction:column;
-  justify-content: flex-end;
-  ;
-
 }
