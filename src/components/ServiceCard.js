@@ -1,5 +1,5 @@
 import React from "react";
-
+import ServiceModal from "../components/ServiceModal"
 
 
 function ServiceCard({service, fromSignIn}){
@@ -9,7 +9,13 @@ function ServiceCard({service, fromSignIn}){
         fromSignIn()
     }
     
-   // console.log(service)
+   function test(){
+       return (
+        <div class="ui right floated button"> 
+        <ServiceModal />
+        </div>
+       )
+   }
 
     return (
         <div class="service-card">
@@ -34,7 +40,8 @@ function ServiceCard({service, fromSignIn}){
                     <div class="extra content">
                         <h5>
                             <i class="users icon"></i>Price: ${service.price} 
-                            <button onClick={handleBook} class="ui right floated button">Book Now</button>
+                            {test()}
+                            {/* <button onClick={handleBook} class="ui right floated button">Book Now</button> */}
                             <br/> Duration: {service.duration} 
                         </h5>
                     </div>
