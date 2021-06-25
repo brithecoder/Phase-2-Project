@@ -28,24 +28,21 @@ function App() {
     if(signIn === false) {
       setSignIn(signIn => !signIn)
       console.log("Welcome to the Hair Salon")
-      return (
-        <ServiceModal />
-      )
     }
   }
 
-  const testing = () => {
-    if(selectBooking === false){
-      setSelectBooking(selectBooking => !selectBooking)
-      return (
-        <ServiceModal />
-      )
-    } else {
-      return (
-        <SimpleModal />
-      )
-    }
-  }
+  // const testing = () => {
+  //   if(selectBooking === false){
+  //     setSelectBooking(selectBooking => !selectBooking)
+  //     return (
+  //       <ServiceModal />
+  //     )
+  //   } else {
+  //     return (
+  //       <SimpleModal />
+  //     )
+  //   }
+  // }
 
 
   return (
@@ -53,7 +50,6 @@ function App() {
       <Header />
       {/* <SignIn fromSignIn={fromSignIn}/> */}
       <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
-    
       <Footer />
     </div>
   );
