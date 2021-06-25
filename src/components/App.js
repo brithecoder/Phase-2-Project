@@ -34,7 +34,7 @@ function App() {
 
 console.log(ap)
   return (
-    <div className="App" style={{marginTop: "100px", backgroundColor: "#ffefff"}}>
+    <div className="App" style={{marginTop: "80px", backgroundColor: "#ffefff"}}>
       <Header />
       <Services serviceData={serviceData} ap={ap}/>
       <Footer />
