@@ -8,7 +8,7 @@ function ServiceModal({ap, service, handleFooter}) {
   console.log(ap)
 
   const bookApp = ap.map(time => {
-      return <div><button >{time.time}</button></div>
+      return <button class="ui right floated button ui mini button">{time.time}</button>
   })
 
   return (
@@ -28,9 +28,10 @@ function ServiceModal({ap, service, handleFooter}) {
             Have you found the style you've been looking for ? If so book here 👇
           </p>
           <p>Is it okay to use this photo?</p>
-          <div className="container">
+          <Calendar />
+          
           {bookApp}
-          </div>
+          
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
