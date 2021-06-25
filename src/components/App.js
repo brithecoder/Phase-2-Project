@@ -21,6 +21,7 @@ function App() {
 
   function fromSignIn () {
     console.log("You tryna get yo hair did? Errythang did?")
+
     // setSelectBooking(selectBooking => !selectBooking)
   }
 
@@ -29,7 +30,6 @@ function App() {
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
       <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
-      <Calendar />
       <Footer />
     </div>
   );
