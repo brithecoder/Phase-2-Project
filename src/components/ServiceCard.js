@@ -11,7 +11,7 @@ function ServiceCard({service, fromSignIn, ap}){
    function test(){
        return (
         <div class="ui right floated button"> 
-        <ServiceModal ap={ap}/>
+        <ServiceModal ap={ap} service={service}/>
         </div>
        )
    }

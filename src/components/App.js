@@ -3,9 +3,6 @@ import '../css/App.css';
 import Header from "./Header";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import ServiceModal from "../components/ServiceModal"
-import Comments from "../components/Comments"
-import SimpleModal from "./SimpleModal";
 
 
 function App() {
@@ -42,7 +39,6 @@ console.log(ap)
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
       <Services serviceData={serviceData} ap={ap}/>
-      <Calendar />
       <Footer />
     </div>
   );

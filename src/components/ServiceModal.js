@@ -3,7 +3,7 @@ import Calendar from '../components/Calendar'
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
 import "../css/App.css"
 
-function ServiceModal({ap}) {
+function ServiceModal({ap, service, handleFooter}) {
   const [open, setOpen] = React.useState(false)
   console.log(ap)
 
