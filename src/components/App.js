@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import UserForm from "./UserForm";
 import Footer from "../components/Footer";
 import ServiceModal from "../components/ServiceModal"
+import Comments from "../components/Comments"
 import SimpleModal from "./SimpleModal";
 
 
@@ -22,6 +23,8 @@ function App() {
     }
     )
   },[])
+  
+
 
   function fromSignIn () {
     console.log("You tryna get yo hair did? Errythang did?")
@@ -52,8 +55,9 @@ function App() {
     <div className="App" style={{marginTop: "70px"}}>
       <Header />
       {/* <SignIn fromSignIn={fromSignIn}/> */}
-      <Services serviceData={serviceData} fromSignIn={fromSignIn}/>
-    
+      <Services serviceData={serviceData} fromSignIn={fromSignIn}/> 
+      <br/>
+      <Comments />
       <Footer />
     </div>
   );
